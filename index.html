@@ -5,8 +5,6 @@
   <meta name="google-site-verification" content="JyRs5TWWSJScMlBC-RPtMLDF6F3HcImF5SiDqhGZchA"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Zahid Hossain — Graphic Designer, Volunteer and Youth Leader from Bangladesh.">
-<meta name="author" content="Zahid Hossain">
 
 <title>Zahid Hossain | Personal Portfolio</title>
 <meta name="description" content="Official personal website of Zahid Hossain — Graphic Designer, Creative Enthusiast and Assistant Founder of Youth's Foundation, Bangladesh.">
@@ -444,135 +442,194 @@ nav {
   </div>
 </footer>
   
-let currentLanguage = "en";
 
-const translations = {
-  en: {
-    ".nav-links a": [
-      "ABOUT", "EDUCATION", "SKILLS",
-      "CONTACT", "SOCIAL", "PORTFOLIO"
-    ],
-    ".hero .eyebrow": ["Personal Portfolio · Bangladesh"],
-    ".hero p": [
-      "Graphic Designer. Volunteer. Dreamer.<br>Building ideas, creating meaningful work and contributing to society."
-    ],
-    ".actions a": ["EXPLORE MY WORLD ↗", "GET IN TOUCH"],
-
-    "#about .section-label": ["01 / About Me"],
-    "#about .section-title": ["A little about myself."],
-    "#about .about-text": [
-      "I am Zahid Hossain, a young creative individual from Dhaka, Bangladesh. I have a passion for graphic design, digital creativity, writing and social work. I believe in continuous learning, meaningful collaboration and making a positive impact."
-    ],
-
-    "#education .section-label": ["02 / Education"],
-    "#education .section-title": ["Academic journey."],
-    "#education .card h3": [
-
+</script>
+  
 <script>
 let currentLanguage = "en";
 
 const translations = {
   en: {
     nav: ["ABOUT", "EDUCATION", "SKILLS", "CONTACT", "SOCIAL", "PORTFOLIO"],
-    eyebrow: "GRAPHIC DESIGNER • VOLUNTEER • YOUTH LEADER",
-    heroText: "Creating with purpose. Growing with vision. Building a meaningful future.",
-    aboutLabel: "GET TO KNOW ME",
-    aboutTitle: "About Me",
-    aboutText: "I am Zahid Hossain, a graphic designer, creative enthusiast and youth volunteer from Bangladesh. I believe in creativity, leadership and meaningful contribution to society.",
-    educationLabel: "MY ACADEMIC JOURNEY",
-    educationTitle: "Education",
-    skillsLabel: "WHAT I DO",
-    skillsTitle: "Skills & Expertise",
-    leadershipLabel: "LEADERSHIP & COMMUNITY",
-    leadershipTitle: "Leadership",
-    leadershipText: "Assistant Founder and Publicity & Publications Secretary at Youth's Foundation.",
-    visionLabel: "LOOKING AHEAD",
-    visionTitle: "My Vision",
-    visionText: "To grow through learning, serve people through meaningful work and build a future that makes my family proud.",
-    contactLabel: "LET'S CONNECT",
-    contactTitle: "Contact",
-    socialLabel: "FIND ME ONLINE",
-    socialTitle: "Social Media",
-    portfolioLabel: "MY CREATIVE WORK",
-    portfolioTitle: "Portfolio",
-    portfolioText: "My creative portfolio is currently in development. Coming Soon · 2027",
-    footer: "© 2026 Zahid Hossain. All Rights Reserved."
+    heroEyebrow: "Personal Portfolio · Bangladesh",
+    heroText: "Graphic Designer. Volunteer. Dreamer. Building ideas, creating meaningful work and contributing to society.",
+    actionButtons: ["EXPLORE MY WORLD ↗", "GET IN TOUCH"],
+
+    aboutLabel: "01 / About Me",
+    aboutTitle: "A little about myself.",
+    aboutText: "I am Zahid Hossain, a young creative individual from Dhaka, Bangladesh. I have a passion for graphic design, digital creativity, writing and social work. I believe in continuous learning, meaningful collaboration and making a positive impact.",
+
+    educationLabel: "02 / Education",
+    educationTitle: "Academic journey.",
+    educationCards: [
+      ["Higher Secondary Certificate", "Humanities · Hazaribagh Government College, Dhaka", "Appeared in HSC examination"],
+      ["Secondary School Certificate", "Science · Millat High School, Bangshal, Dhaka"],
+      ["Junior School Certificate", "Millat High School, Bangshal, Dhaka"],
+      ["Primary School Certificate", "Tawheed Institute"]
+    ],
+
+    skillsLabel: "03 / Expertise",
+    skillsTitle: "Skills & interests.",
+    skills: ["Graphic Design", "Adobe Photoshop", "Adobe Illustrator", "Video Editing", "Content Writing", "Volunteering", "Creative Thinking"],
+
+    leadershipLabel: "04 / Leadership & Social Work",
+    leadershipTitle: "Beyond myself.",
+    leadershipCategory: "YOUTH DEVELOPMENT · SOCIAL WELFARE",
+    leadershipRole: "Assistant Founder · Publicity & Publications Secretary",
+    leadershipText: "Contributing to organizational communication, publicity, publications and humanitarian initiatives.",
+
+    visionLabel: "05 / Vision",
+    visionTitle: "Driven by purpose.",
+    visionText: "My vision is to pursue higher education, develop professional skills, expand my contribution to society and help Youth's Foundation grow to a national level. I aspire to keep learning and create a meaningful future.",
+
+    contactTitle: "Let's connect.",
+    contactText: "Have an idea, project or opportunity? Let's make something meaningful.",
+    contactButton: "GITHUB PROFILE ↗",
+
+    socialLabel: "06 / Social Presence",
+    socialTitle: "Find me online.",
+    socialDescriptions: ["Connect with me on Facebook", "@zahid.hossain.001"],
+
+    portfolioLabel: "MY CREATIVE JOURNEY",
+    portfolioTitle: "Graphic Design Portfolio",
+    portfolioSubtitle: "Something Creative Is Coming.",
+    portfolioText: "My graphic design portfolio is currently under development. A collection of my creative works will be showcased here soon.",
+    comingSoon: "COMING SOON · 2027",
+
+    footer: "© 2026 Zahid Hossain. All rights reserved. · Designed with purpose."
   },
 
   bn: {
     nav: ["আমার সম্পর্কে", "শিক্ষাজীবন", "দক্ষতা", "যোগাযোগ", "সামাজিক মাধ্যম", "পোর্টফোলিও"],
-    eyebrow: "গ্রাফিক ডিজাইনার • স্বেচ্ছাসেবক • তরুণ সংগঠক",
-    heroText: "উদ্দেশ্য নিয়ে সৃষ্টি, লক্ষ্য নিয়ে এগিয়ে চলা এবং অর্থবহ ভবিষ্যৎ গড়ে তোলা।",
-    aboutLabel: "আমার পরিচয়",
-    aboutTitle: "আমার সম্পর্কে",
-    aboutText: "আমি জাহিদ হোসাইন। বাংলাদেশের একজন গ্রাফিক ডিজাইনার, সৃজনশীল কাজের অনুরাগী এবং তরুণ স্বেচ্ছাসেবক। আমি সৃজনশীলতা, নেতৃত্ব এবং সমাজের কল্যাণে অর্থবহ অবদানে বিশ্বাস করি।",
-    educationLabel: "আমার শিক্ষাজীবন",
-    educationTitle: "শিক্ষাগত যোগ্যতা",
-    skillsLabel: "আমি যা করি",
-    skillsTitle: "দক্ষতা ও অভিজ্ঞতা",
-    leadershipLabel: "নেতৃত্ব ও সমাজসেবা",
-    leadershipTitle: "নেতৃত্ব",
-    leadershipText: "ইয়ুথ'স ফাউন্ডেশনের সহ-প্রতিষ্ঠাতা এবং বর্তমানে প্রচার ও প্রকাশনা সম্পাদক হিসেবে দায়িত্ব পালন করছি।",
-    visionLabel: "আগামীর লক্ষ্য",
-    visionTitle: "আমার স্বপ্ন",
-    visionText: "জ্ঞান ও দক্ষতা অর্জনের মাধ্যমে নিজেকে গড়ে তোলা, মানুষের কল্যাণে কাজ করা এবং পরিবারকে গর্বিত করার মতো ভবিষ্যৎ তৈরি করা।",
-    contactLabel: "যোগাযোগ করুন",
-    contactTitle: "যোগাযোগ",
-    socialLabel: "অনলাইনে খুঁজে নিন",
-    socialTitle: "সামাজিক যোগাযোগমাধ্যম",
-    portfolioLabel: "আমার সৃজনশীল কাজ",
-    portfolioTitle: "পোর্টফোলিও",
-    portfolioText: "আমার সৃজনশীল কাজের সংগ্রহ তৈরির কাজ চলছে। শীঘ্রই আসছে · ২০২৭",
-    footer: "© ২০২৬ জাহিদ হোসাইন। সর্বস্বত্ব সংরক্ষিত।"
+    heroEyebrow: "ব্যক্তিগত ওয়েবসাইট · বাংলাদেশ",
+    heroText: "গ্রাফিক ডিজাইনার। স্বেচ্ছাসেবক। স্বপ্নদ্রষ্টা। নতুন ধারণা, অর্থবহ কাজ এবং সমাজের কল্যাণে অবদান রাখার প্রত্যয়ে এগিয়ে চলা।",
+    actionButtons: ["আমার সম্পর্কে জানুন ↗", "যোগাযোগ করুন"],
+
+    aboutLabel: "০১ / আমার পরিচয়",
+    aboutTitle: "নিজের সম্পর্কে কিছু কথা।",
+    aboutText: "আমি জাহিদ হোসাইন, বাংলাদেশের ঢাকা থেকে একজন তরুণ সৃজনশীল মানুষ। গ্রাফিক ডিজাইন, ডিজিটাল সৃজনশীলতা, লেখালেখি ও সমাজসেবার প্রতি আমার বিশেষ আগ্রহ রয়েছে। আমি নিয়মিত শেখা, অর্থবহ সহযোগিতা এবং ইতিবাচক পরিবর্তনে বিশ্বাস করি।",
+
+    educationLabel: "০২ / শিক্ষাজীবন",
+    educationTitle: "আমার শিক্ষাগত যাত্রা।",
+    educationCards: [
+      ["উচ্চ মাধ্যমিক সার্টিফিকেট", "মানবিক বিভাগ · হাজারীবাগ সরকারি কলেজ, ঢাকা", "এইচএসসি পরীক্ষায় অংশগ্রহণ করেছি"],
+      ["মাধ্যমিক স্কুল সার্টিফিকেট", "বিজ্ঞান বিভাগ · মিল্লাত হাই স্কুল, বংশাল, ঢাকা"],
+      ["জুনিয়র স্কুল সার্টিফিকেট", "মিল্লাত হাই স্কুল, বংশাল, ঢাকা"],
+      ["প্রাথমিক শিক্ষা সমাপনী", "তাওহীদ ইনস্টিটিউট"]
+    ],
+
+    skillsLabel: "০৩ / দক্ষতা",
+    skillsTitle: "দক্ষতা ও আগ্রহ।",
+    skills: ["গ্রাফিক ডিজাইন", "অ্যাডোবি ফটোশপ", "অ্যাডোবি ইলাস্ট্রেটর", "ভিডিও এডিটিং", "কনটেন্ট রাইটিং", "স্বেচ্ছাসেবা", "সৃজনশীল চিন্তাভাবনা"],
+
+    leadershipLabel: "০৪ / নেতৃত্ব ও সমাজসেবা",
+    leadershipTitle: "নিজের গণ্ডির বাইরে।",
+    leadershipCategory: "যুব উন্নয়ন · সমাজকল্যাণ",
+    leadershipRole: "সহ-প্রতিষ্ঠাতা · প্রচার ও প্রকাশনা সম্পাদক",
+    leadershipText: "সংগঠনের যোগাযোগ, প্রচার, প্রকাশনা এবং মানবিক কার্যক্রমে অবদান রাখছি।",
+
+    visionLabel: "০৫ / ভবিষ্যৎ পরিকল্পনা",
+    visionTitle: "লক্ষ্যই আমার প্রেরণা।",
+    visionText: "আমার লক্ষ্য উচ্চশিক্ষা অর্জন, পেশাগত দক্ষতা বৃদ্ধি, সমাজের কল্যাণে অবদান বাড়ানো এবং ইয়ুথ'স ফাউন্ডেশনকে জাতীয় পর্যায়ে এগিয়ে নিতে কাজ করা। আমি প্রতিনিয়ত শিখতে এবং একটি অর্থবহ ভবিষ্যৎ গড়তে চাই।",
+
+    contactTitle: "যোগাযোগ রাখুন।",
+    contactText: "আপনার কোনো ধারণা, প্রকল্প বা কাজের সুযোগ আছে? চলুন অর্থবহ কিছু তৈরি করি।",
+    contactButton: "গিটহাব প্রোফাইল ↗",
+
+    socialLabel: "০৬ / সামাজিক যোগাযোগ",
+    socialTitle: "অনলাইনে আমাকে খুঁজুন।",
+    socialDescriptions: ["ফেসবুকে আমার সঙ্গে যুক্ত হোন", "@zahid.hossain.001"],
+
+    portfolioLabel: "আমার সৃজনশীল যাত্রা",
+    portfolioTitle: "গ্রাফিক ডিজাইন পোর্টফোলিও",
+    portfolioSubtitle: "সৃজনশীল কিছু আসছে।",
+    portfolioText: "আমার গ্রাফিক ডিজাইন পোর্টফোলিও তৈরির কাজ চলছে। শিগগিরই এখানে আমার সৃজনশীল কাজের সংগ্রহ তুলে ধরা হবে।",
+    comingSoon: "শীঘ্রই আসছে · ২০২৭",
+
+    footer: "© ২০২৬ জাহিদ হোসাইন। সর্বস্বত্ব সংরক্ষিত। · উদ্দেশ্য নিয়ে তৈরি।"
   }
 };
 
-function setLanguage(language) {
-  currentLanguage = language;
-  const t = translations[language];
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "bn" : "en";
+  const t = translations[currentLanguage];
 
-  document.querySelectorAll(".nav-links a").forEach((el, i) => {
-    if (t.nav[i]) el.textContent = t.nav[i];
-  });
-
-  const setText = (selector, value) => {
+  const set = (selector, value) => {
     const el = document.querySelector(selector);
     if (el) el.textContent = value;
   };
 
-  setText(".hero .eyebrow", t.eyebrow);
-  setText(".hero p", t.heroText);
-  setText("#about .section-label", t.aboutLabel);
-  setText("#about h2", t.aboutTitle);
-  setText("#about .about-text", t.aboutText);
-  setText("#education .section-label", t.educationLabel);
-  setText("#education h2", t.educationTitle);
-  setText("#skills .section-label", t.skillsLabel);
-  setText("#skills h2", t.skillsTitle);
-  setText("#leadership .section-label", t.leadershipLabel);
-  setText("#leadership h2", t.leadershipTitle);
-  setText("#leadership p", t.leadershipText);
-  setText("#vision .section-label", t.visionLabel);
-  setText("#vision h2", t.visionTitle);
-  setText("#vision p", t.visionText);
-  setText("#contact .section-label", t.contactLabel);
-  setText("#contact h2", t.contactTitle);
-  setText("#social .section-label", t.socialLabel);
-  setText("#social h2", t.socialTitle);
-  setText("#portfolio .section-label", t.portfolioLabel);
-  setText("#portfolio h2", t.portfolioTitle);
-  setText("#portfolio p", t.portfolioText);
-  setText("footer p", t.footer);
+  document.querySelectorAll(".nav-links a").forEach((el, i) => {
+    el.textContent = t.nav[i];
+  });
 
-  document.documentElement.lang = language;
+  set(".hero .eyebrow", t.heroEyebrow);
+  set(".hero p", t.heroText);
+
+  document.querySelectorAll(".actions a").forEach((el, i) => {
+    el.textContent = t.actionButtons[i];
+  });
+
+  set("#about .section-label", t.aboutLabel);
+  set("#about h2", t.aboutTitle);
+  set("#about .about-text", t.aboutText);
+
+  set("#education .section-label", t.educationLabel);
+  set("#education h2", t.educationTitle);
+
+  document.querySelectorAll("#education .card").forEach((card, i) => {
+    const data = t.educationCards[i];
+    if (!data) return;
+    card.querySelector("h3").textContent = data[0];
+    card.querySelectorAll("p").forEach((p, j) => {
+      if (data[j + 1]) p.textContent = data[j + 1];
+    });
+  });
+
+  set("#skills .section-label", t.skillsLabel);
+  set("#skills h2", t.skillsTitle);
+  document.querySelectorAll("#skills .skill").forEach((el, i) => {
+    el.textContent = t.skills[i];
+  });
+
+  set("#leadership .section-label", t.leadershipLabel);
+  set("#leadership h2", t.leadershipTitle);
+  set("#leadership .year", t.leadershipCategory);
+  set("#leadership h3", "Youth's Foundation");
+  document.querySelectorAll("#leadership .card p").forEach((el, i) => {
+    el.textContent = i === 0 ? t.leadershipRole : t.leadershipText;
+  });
+
+  set("#vision .section-label", t.visionLabel);
+  set("#vision h2", t.visionTitle);
+  set("#vision .highlight p", t.visionText);
+
+  set("#contact h2", t.contactTitle);
+  set("#contact p", t.contactText);
+  set("#contact .btn", t.contactButton);
+
+  set("#social .section-label", t.socialLabel);
+  set("#social h2", t.socialTitle);
+  document.querySelectorAll("#social .social-card p").forEach((el, i) => {
+    el.textContent = t.socialDescriptions[i];
+  });
+
+  set("#portfolio .section-label", t.portfolioLabel);
+  set("#portfolio h2", t.portfolioTitle);
+  set("#portfolio h3", t.portfolioSubtitle);
+  set("#portfolio p", t.portfolioText);
+  set("#portfolio .coming-soon", t.comingSoon);
+
+  document.querySelector("footer .container").textContent = t.footer;
+
+  document.documentElement.lang = currentLanguage;
   document.getElementById("languageToggle").textContent =
-    language === "en" ? "বাংলা" : "English";
-}
-
-function toggleLanguage() {
-  setLanguage(currentLanguage === "en" ? "bn" : "en");
+    currentLanguage === "en" ? "বাংলা" : "English";
 }
 </script>
+</body>
+</html>
+
 </body>
   </html>
       
