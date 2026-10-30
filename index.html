@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zahid Hossain — Graphic Designer, Volunteer and Youth Leader from Bangladesh.">
+<meta name="author" content="Zahid Hossain">
+<title>Zahid Hossain | Personal Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #090909;
+  --surface: #111111;
+  --white: #f5f5f2;
+  --muted: #999999;
+  --line: #292929;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1100px, 90%); margin: auto; }
+
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(9,9,9,.92);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--line);
+}
+nav {
+  min-height: 76px; display: flex;
+  justify-content: space-between; align-items: center;
+}
+.logo { font-size: 23px; font-weight: 700; letter-spacing: 2px; }
+.logo span { color: #888; }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links a { font-size: 13px; color: #bbb; }
+.nav-links a:hover { color: white; }
+
+.hero {
+  min-height: 570px; display: flex;
+  flex-direction: column; justify-content: center;
+  padding: 90px 0;
+}
+.eyebrow {
+  color: #aaa; text-transform: uppercase;
+  letter-spacing: 4px; font-size: 11px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 9vw, 92px);
+  line-height: 1.1; margin: 24px 0;
+  letter-spacing: -2px;
+}
+.hero h1 span { color: #858585; }
+.hero p { max-width: 560px; color: #aaa; font-size: 16px; }
+.actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
+.btn {
+  padding: 12px 22px; border: 1px solid #eee;
+  font-size: 12px; letter-spacing: 1px;
+  transition: .25s;
+}
+.btn.primary { background: white; color: black; }
+.btn:hover { background: #aaa; color: black; border-color: #aaa; }
+
+section { padding: 85px 0; border-top: 1px solid var(--line); }
+.section-label {
+  color: #888; font-size: 11px;
+  letter-spacing: 3px; text-transform: uppercase;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 5vw, 48px);
+  margin: 12px 0 35px;
+}
+.about-text { max-width: 760px; color: #b5b5b5; font-size: 16px; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  padding: 27px; transition: .3s;
+}
+.card:hover { border-color: #777; transform: translateY(-4px); }
+.card h3 { font-size: 17px; margin-bottom: 8px; }
+.card p { color: var(--muted); font-size: 13px; }
+.year { color: #888; font-size: 11px; letter-spacing: 1px; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 12px; }
+.skill {
+  border: 1px solid #333; padding: 10px 17px;
+  color: #ccc; font-size: 13px;
+}
+.highlight {
+  margin-top: 20px; padding: 30px;
+  background: #111; border-left: 2px solid white;
+}
+.highlight p { color: #aaa; font-size: 14px; }
+
+.contact-box {
+  background: #f1f1ee; color: #111;
+  padding: 45px; text-align: center;
+}
+.contact-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 5vw, 46px);
+}
+.contact-box p { color: #555; margin: 12px 0 22px; }
+.contact-box .btn { border-color: #111; }
+.contact-box .btn:hover { background: #111; color: white; }
+
+footer {
+  padding: 28px 0; color: #777;
+  font-size: 12px; text-align: center;
+}
+
+@media(max-width:650px) {
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 10px; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { min-height: 500px; }
+  section { padding: 65px 0; }
+  .contact-box { padding: 30px 18px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav class="container">
+    <a href="#" class="logo">ZH<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<div class="container">
+  <div class="hero">
+    <div class="eyebrow">Personal Portfolio · Bangladesh</div>
+    <h1>Zahid<br><span>Hossain.</span></h1>
+    <p>Graphic Designer. Volunteer. Dreamer.<br>
+    Building ideas, creating meaningful work and contributing to society.</p>
+    <div class="actions">
+      <a href="#about" class="btn primary">EXPLORE MY WORLD ↗</a>
+      <a href="#contact" class="btn">GET IN TOUCH</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 / About Me</div>
+    <h2 class="section-title">A little about myself.</h2>
+    <p class="about-text">
+      I am Zahid Hossain, a young creative individual from Dhaka, Bangladesh.
+      I have a passion for graphic design, digital creativity, writing and social work.
+      I believe in continuous learning, meaningful collaboration and making a positive impact.
+      <br><br>
+      আমি জাহিদ হোসেন। সৃজনশীল কাজ, গ্রাফিক ডিজাইন, স্বেচ্ছাসেবা এবং
+      নতুন কিছু শেখার প্রতি আমার বিশেষ আগ্রহ রয়েছে। নিজের দক্ষতা ও
+      কাজের মাধ্যমে সমাজে ইতিবাচক অবদান রাখতে চাই।
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-label">02 / Education</div>
+    <h2 class="section-title">Academic journey.</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="year">2026</div>
+        <h3>Higher Secondary Certificate</h3>
+        <p>Humanities · Hazaribagh Government College, Dhaka</p>
+        <p>Appeared in HSC examination</p>
+      </div>
+      <div class="card">
+        <div class="year">2024</div>
+        <h3>Secondary School Certificate</h3>
+        <p>Science · Millat High School, Bangshal, Dhaka</p>
+      </div>
+      <div class="card">
+        <div class="year">2022</div>
+        <h3>Junior School Certificate</h3>
+        <p>Millat High School, Bangshal, Dhaka</p>
+      </div>
+      <div class="card">
+        <div class="year">2018</div>
+        <h3>Primary School Certificate</h3>
+        <p>Tawheed Institute</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-label">03 / Expertise</div>
+    <h2 class="section-title">Skills & interests.</h2>
+    <div class="skills">
+      <span class="skill">Graphic Design</span>
+      <span class="skill">Adobe Photoshop</span>
+      <span class="skill">Adobe Illustrator</span>
+      <span class="skill">Video Editing</span>
+      <span class="skill">Content Writing</span>
+      <span class="skill">Volunteering</span>
+      <span class="skill">Creative Thinking</span>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="container">
+    <div class="section-label">04 / Leadership & Social Work</div>
+    <h2 class="section-title">Beyond myself.</h2>
+    <div class="card">
+      <div class="year">YOUTH DEVELOPMENT · SOCIAL WELFARE</div>
+      <h3>Youth's Foundation</h3>
+      <p>
+        Assistant Founder · Publicity & Publications Secretary
+      </p>
+      <p style="margin-top:14px">
+        Contributing to organizational communication, publicity,
+        publications and humanitarian initiatives.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="container">
+    <div class="section-label">05 / Vision</div>
+    <h2 class="section-title">Driven by purpose.</h2>
+    <div class="highlight">
+      <p>
+        My vision is to pursue higher education, develop professional skills,
+        expand my contribution to society and help Youth's Foundation grow
+        to a national level. I aspire to keep learning and create a meaningful future.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <h2>Let's connect.</h2>
+      <p>Have an idea, project or opportunity? Let's make something meaningful.</p>
+      <a href="https://github.com/zahid-hossain-bd" class="btn">GITHUB PROFILE ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Zahid Hossain. All rights reserved.<br>
+    Designed with purpose.
+  </div>
+</footer>
+</body>
+  </html>
+      
