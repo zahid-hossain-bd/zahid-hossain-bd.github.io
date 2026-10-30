@@ -131,6 +131,40 @@ footer {
   section { padding: 65px 0; }
   .contact-box { padding: 30px 18px; }
 }
+  .social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.social-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background: #111;
+  border: 1px solid #292929;
+  transition: .3s;
+}
+.social-card:hover {
+  border-color: #fff;
+  transform: translateY(-4px);
+}
+.social-card h3 {
+  font-size: 18px;
+}
+.social-card p {
+  color: #888;
+  font-size: 12px;
+}
+.social-arrow {
+  font-size: 22px;
+  color: #aaa;
+}
+@media(max-width: 600px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+    }
 </style>
 </head>
 
@@ -139,10 +173,11 @@ footer {
   <nav class="container">
     <a href="#" class="logo">ZH<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#education">EDUCATION</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="#education">EDUCATION</a></li>
+  <li><a href="#skills">SKILLS</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#social">SOCIAL</a></li>
     </ul>
   </nav>
 </header>
@@ -261,6 +296,33 @@ footer {
       <h2>Let's connect.</h2>
       <p>Have an idea, project or opportunity? Let's make something meaningful.</p>
       <a href="https://github.com/zahid-hossain-bd" class="btn">GITHUB PROFILE ↗</a>
+    </div>
+  </div>
+</section> <section id="social">
+  <div class="container">
+    <div class="section-label">06 / Social Presence</div>
+    <h2 class="section-title">Find me online.</h2>
+
+    <div class="social-grid">
+      <a class="social-card"
+         href="https://www.facebook.com/share/1G8Z9CWxyk/"
+         target="_blank" rel="noopener noreferrer">
+        <div>
+          <h3>Facebook ↗</h3>
+          <p>Connect with me on Facebook</p>
+        </div>
+        <span class="social-arrow">↗</span>
+      </a>
+
+      <a class="social-card"
+         href="https://www.instagram.com/zahid.hossain.001/"
+         target="_blank" rel="noopener noreferrer">
+        <div>
+          <h3>Instagram ↗</h3>
+          <p>@zahid.hossain.001</p>
+        </div>
+        <span class="social-arrow">↗</span>
+      </a>
     </div>
   </div>
 </section>
