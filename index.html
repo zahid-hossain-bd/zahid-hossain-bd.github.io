@@ -226,6 +226,33 @@ footer {
   font-size: 10px;
   letter-spacing: 2px;
        }
+  
+.language-toggle {
+  background: transparent;
+  color: white;
+  border: 1px solid #777;
+  padding: 8px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.language-toggle:hover {
+  background: white;
+  color: black;
+}
+
+nav {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+}
+  
 </style>
 </head>
 
@@ -241,6 +268,12 @@ footer {
   <li><a href="#social">SOCIAL</a></li>
       <li><a href="#portfolio">PORTFOLIO</a></li>
     </ul>
+    
+    <button id="languageToggle" 
+      class="language-toggle" 
+      onclick="toggleLanguage()">
+  বাংলা
+    </button>
   </nav>
 </header>
 
@@ -410,6 +443,136 @@ footer {
     Designed with purpose.
   </div>
 </footer>
+  
+let currentLanguage = "en";
+
+const translations = {
+  en: {
+    ".nav-links a": [
+      "ABOUT", "EDUCATION", "SKILLS",
+      "CONTACT", "SOCIAL", "PORTFOLIO"
+    ],
+    ".hero .eyebrow": ["Personal Portfolio · Bangladesh"],
+    ".hero p": [
+      "Graphic Designer. Volunteer. Dreamer.<br>Building ideas, creating meaningful work and contributing to society."
+    ],
+    ".actions a": ["EXPLORE MY WORLD ↗", "GET IN TOUCH"],
+
+    "#about .section-label": ["01 / About Me"],
+    "#about .section-title": ["A little about myself."],
+    "#about .about-text": [
+      "I am Zahid Hossain, a young creative individual from Dhaka, Bangladesh. I have a passion for graphic design, digital creativity, writing and social work. I believe in continuous learning, meaningful collaboration and making a positive impact."
+    ],
+
+    "#education .section-label": ["02 / Education"],
+    "#education .section-title": ["Academic journey."],
+    "#education .card h3": [
+
+<script>
+let currentLanguage = "en";
+
+const translations = {
+  en: {
+    nav: ["ABOUT", "EDUCATION", "SKILLS", "CONTACT", "SOCIAL", "PORTFOLIO"],
+    eyebrow: "GRAPHIC DESIGNER • VOLUNTEER • YOUTH LEADER",
+    heroText: "Creating with purpose. Growing with vision. Building a meaningful future.",
+    aboutLabel: "GET TO KNOW ME",
+    aboutTitle: "About Me",
+    aboutText: "I am Zahid Hossain, a graphic designer, creative enthusiast and youth volunteer from Bangladesh. I believe in creativity, leadership and meaningful contribution to society.",
+    educationLabel: "MY ACADEMIC JOURNEY",
+    educationTitle: "Education",
+    skillsLabel: "WHAT I DO",
+    skillsTitle: "Skills & Expertise",
+    leadershipLabel: "LEADERSHIP & COMMUNITY",
+    leadershipTitle: "Leadership",
+    leadershipText: "Assistant Founder and Publicity & Publications Secretary at Youth's Foundation.",
+    visionLabel: "LOOKING AHEAD",
+    visionTitle: "My Vision",
+    visionText: "To grow through learning, serve people through meaningful work and build a future that makes my family proud.",
+    contactLabel: "LET'S CONNECT",
+    contactTitle: "Contact",
+    socialLabel: "FIND ME ONLINE",
+    socialTitle: "Social Media",
+    portfolioLabel: "MY CREATIVE WORK",
+    portfolioTitle: "Portfolio",
+    portfolioText: "My creative portfolio is currently in development. Coming Soon · 2027",
+    footer: "© 2026 Zahid Hossain. All Rights Reserved."
+  },
+
+  bn: {
+    nav: ["আমার সম্পর্কে", "শিক্ষাজীবন", "দক্ষতা", "যোগাযোগ", "সামাজিক মাধ্যম", "পোর্টফোলিও"],
+    eyebrow: "গ্রাফিক ডিজাইনার • স্বেচ্ছাসেবক • তরুণ সংগঠক",
+    heroText: "উদ্দেশ্য নিয়ে সৃষ্টি, লক্ষ্য নিয়ে এগিয়ে চলা এবং অর্থবহ ভবিষ্যৎ গড়ে তোলা।",
+    aboutLabel: "আমার পরিচয়",
+    aboutTitle: "আমার সম্পর্কে",
+    aboutText: "আমি জাহিদ হোসাইন। বাংলাদেশের একজন গ্রাফিক ডিজাইনার, সৃজনশীল কাজের অনুরাগী এবং তরুণ স্বেচ্ছাসেবক। আমি সৃজনশীলতা, নেতৃত্ব এবং সমাজের কল্যাণে অর্থবহ অবদানে বিশ্বাস করি।",
+    educationLabel: "আমার শিক্ষাজীবন",
+    educationTitle: "শিক্ষাগত যোগ্যতা",
+    skillsLabel: "আমি যা করি",
+    skillsTitle: "দক্ষতা ও অভিজ্ঞতা",
+    leadershipLabel: "নেতৃত্ব ও সমাজসেবা",
+    leadershipTitle: "নেতৃত্ব",
+    leadershipText: "ইয়ুথ'স ফাউন্ডেশনের সহ-প্রতিষ্ঠাতা এবং বর্তমানে প্রচার ও প্রকাশনা সম্পাদক হিসেবে দায়িত্ব পালন করছি।",
+    visionLabel: "আগামীর লক্ষ্য",
+    visionTitle: "আমার স্বপ্ন",
+    visionText: "জ্ঞান ও দক্ষতা অর্জনের মাধ্যমে নিজেকে গড়ে তোলা, মানুষের কল্যাণে কাজ করা এবং পরিবারকে গর্বিত করার মতো ভবিষ্যৎ তৈরি করা।",
+    contactLabel: "যোগাযোগ করুন",
+    contactTitle: "যোগাযোগ",
+    socialLabel: "অনলাইনে খুঁজে নিন",
+    socialTitle: "সামাজিক যোগাযোগমাধ্যম",
+    portfolioLabel: "আমার সৃজনশীল কাজ",
+    portfolioTitle: "পোর্টফোলিও",
+    portfolioText: "আমার সৃজনশীল কাজের সংগ্রহ তৈরির কাজ চলছে। শীঘ্রই আসছে · ২০২৭",
+    footer: "© ২০২৬ জাহিদ হোসাইন। সর্বস্বত্ব সংরক্ষিত।"
+  }
+};
+
+function setLanguage(language) {
+  currentLanguage = language;
+  const t = translations[language];
+
+  document.querySelectorAll(".nav-links a").forEach((el, i) => {
+    if (t.nav[i]) el.textContent = t.nav[i];
+  });
+
+  const setText = (selector, value) => {
+    const el = document.querySelector(selector);
+    if (el) el.textContent = value;
+  };
+
+  setText(".hero .eyebrow", t.eyebrow);
+  setText(".hero p", t.heroText);
+  setText("#about .section-label", t.aboutLabel);
+  setText("#about h2", t.aboutTitle);
+  setText("#about .about-text", t.aboutText);
+  setText("#education .section-label", t.educationLabel);
+  setText("#education h2", t.educationTitle);
+  setText("#skills .section-label", t.skillsLabel);
+  setText("#skills h2", t.skillsTitle);
+  setText("#leadership .section-label", t.leadershipLabel);
+  setText("#leadership h2", t.leadershipTitle);
+  setText("#leadership p", t.leadershipText);
+  setText("#vision .section-label", t.visionLabel);
+  setText("#vision h2", t.visionTitle);
+  setText("#vision p", t.visionText);
+  setText("#contact .section-label", t.contactLabel);
+  setText("#contact h2", t.contactTitle);
+  setText("#social .section-label", t.socialLabel);
+  setText("#social h2", t.socialTitle);
+  setText("#portfolio .section-label", t.portfolioLabel);
+  setText("#portfolio h2", t.portfolioTitle);
+  setText("#portfolio p", t.portfolioText);
+  setText("footer p", t.footer);
+
+  document.documentElement.lang = language;
+  document.getElementById("languageToggle").textContent =
+    language === "en" ? "বাংলা" : "English";
+}
+
+function toggleLanguage() {
+  setLanguage(currentLanguage === "en" ? "bn" : "en");
+}
+</script>
 </body>
   </html>
       
